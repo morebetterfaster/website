@@ -3,8 +3,10 @@
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
+  "homepage": "http://morebetterfaster.io",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "deploy": "gh-pages -d dist"
   },
   "repository": {
     "type": "git",
@@ -16,7 +18,6 @@
   "bugs": {
     "url": "https://github.com/morebetterfaster/website/issues"
   },
-  "homepage": "https://github.com/morebetterfaster/website#readme",
   "dependencies": {
     "gh-pages": "^1.2.0"
   }
