@@ -1,5 +1,9 @@
-<div style="text-align: center">
+<div align="center">
   <img src="src/assets/logo.png" height="100">
 </div>
 
-This repository holds the code for the website [morebetterfaster.io](https://morebetterfaster.io), a web application development and coaching organization in Milwaukee, WI.
+| 🏹         | 🎯                                                                                                                                                                         |
+| ---------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Website    | https://morebetterfaster.io                                                                                                                                                |
+| Repository | git@github.com:morebetterfaster/website.git                                                                                                                                |
+| Deploy     | [![Netlify Status](https://api.netlify.com/api/v1/badges/9910e6fd-208b-449f-8a0d-e5bbe8c26b83/deploy-status)](https://app.netlify.com/sites/eager-hamilton-87ad90/deploys) |
