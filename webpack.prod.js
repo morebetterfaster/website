@@ -94,7 +94,15 @@ module.exports = {
     new HtmlWebpackPlugin({
       template: "./index.html",
       // Inject the js bundle at the end of the body of the given template
-      inject: "body"
+      inject: "body",
+      minify: {
+        collapseWhitespace: true,
+        removeComments: true,
+        removeRedundantAttributes: true,
+        removeScriptTypeAttributes: true,
+        removeStyleLinkTypeAttributes: true,
+        useShortDoctype: true
+      }
     }),
     new CleanWebpackPlugin(buildPath),
     new FaviconsWebpackPlugin({
