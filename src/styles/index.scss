@@ -1,8 +1,14 @@
 @import url("https://fonts.googleapis.com/css?family=Raleway:400,600");
 
+$body-bg: #ffffff;
+$body-color: #242424;
+$dark-color: #11181f;
+$dark-contrast-color: #0f3f9c;
+$muted-color: #dfdfdf;
+
 body {
-  background-color: #ffffff;
-  color: #242424;
+  background-color: $body-bg;
+  color: $body-color;
   font-size: 1.3rem;
   line-height: 1.7;
   font-weight: 400;
@@ -13,6 +19,7 @@ body {
 
 header {
   background-color: #f4f5fb;
+  box-shadow: 1px -3px 5px 1px rgba(0, 0, 0, 0.5);
   height: 100vh;
   display: flex;
   flex-direction: column-reverse;
@@ -29,27 +36,34 @@ header {
   h2 {
     order: 1;
     font-size: 3vw;
-    color: #11181f;
+    color: $dark-color;
   }
 }
 
 h1,
 h2,
-h3 {
+h3,
+h4 {
   margin: 0;
 }
 
 main {
-  max-width: 40rem;
-  padding: 0 2rem;
-  margin: auto;
-
+  padding-top: 2rem;
   h3 {
     font-weight: 600;
+    font-size: 1.9rem;
+  }
+  h4 {
+    font-size: 1.6rem;
+    color: $dark-contrast-color;
   }
 
   section {
-    padding: 2rem 0;
+    & > div {
+      padding: 2rem;
+      max-width: 40rem;
+      margin: auto;
+    }
   }
 }
 
@@ -60,6 +74,14 @@ p {
   }
 }
 
+.separator {
+  color: $muted-color;
+  text-align: center;
+  font-size: 3rem;
+  padding-top: 0;
+  padding-bottom: 1rem;
+}
+
 #scroll-down {
   position: fixed;
   bottom: 1rem;
@@ -67,6 +89,19 @@ p {
   font-size: 3rem;
   animation: pulse 2.5s infinite;
   animation-timing-function: ease-in-out;
+}
+
+#process {
+  position: relative;
+}
+#process:after {
+  content: "⁜";
+  position: absolute;
+  right: 3%;
+  bottom: 0;
+  font-size: 20rem;
+  line-height: 1;
+  color: rgba(0, 0, 0, 0.04);
 }
 
 @keyframes pulse {
