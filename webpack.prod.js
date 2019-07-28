@@ -89,7 +89,9 @@ module.exports = {
     new CopyPlugin([
       { from: "src/assets/aaron.png", to: "aaron.png" },
       { from: "src/assets/email-logo.png", to: "email-logo.png" },
-      { from: "src/assets/logo.png", to: "logo.png" }
+      { from: "src/assets/logo.png", to: "logo.png" },
+      { from: "robots.txt", to: "robots.txt" },
+      { from: "humans.txt", to: "humans.txt" }
     ]),
     new HtmlWebpackPlugin({
       template: "./index.html",
