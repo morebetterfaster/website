@@ -5,6 +5,7 @@ const CleanWebpackPlugin = require("clean-webpack-plugin"); //installed via npm
 const HtmlWebpackPlugin = require("html-webpack-plugin");
 const MiniCssExtractPlugin = require("mini-css-extract-plugin");
 const OptimizeCssAssetsPlugin = require("optimize-css-assets-webpack-plugin");
+const CopyPlugin = require("copy-webpack-plugin");
 
 const buildPath = path.resolve(__dirname, "dist");
 
@@ -85,6 +86,11 @@ module.exports = {
     ]
   },
   plugins: [
+    new CopyPlugin([
+      { from: "src/assets/aaron.png", to: "aaron.png" },
+      { from: "src/assets/email-logo.png", to: "email-logo.png" },
+      { from: "src/assets/logo.png", to: "logo.png" }
+    ]),
     new HtmlWebpackPlugin({
       template: "./index.html",
       // Inject the js bundle at the end of the body of the given template
