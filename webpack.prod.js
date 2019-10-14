@@ -125,7 +125,7 @@ module.exports = {
       // Your source logo
       logo: "./src/assets/thumbsup.png",
       // The prefix for all image files (might be a folder or a name)
-      prefix: "icons-[hash]/",
+      prefix: "/icons-[hash]/",
       // Generate a cache file with control hashes and
       // don't rebuild the favicons until those hashes change
       persistentCache: true,
