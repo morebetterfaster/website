@@ -144,6 +144,10 @@ p {
   p {
     text-align: justify;
   }
+  a {
+    text-decoration: none;
+    color: $body-color;
+  }
 }
 
 .aaron:hover {
@@ -172,10 +176,13 @@ p {
   margin-top: 1rem;
 }
 #process,
-#best-practices {
+#involve,
+#best-practices,
+#how-work {
   position: relative;
 }
-#process:after {
+#process:after,
+#involve:after {
   content: "⁜";
   position: absolute;
   right: 3%;
@@ -202,7 +209,22 @@ p {
   color: black;
   opacity: 0.05;
 }
-#best-practices {
+#how-work:after {
+  content: "🏆";
+  position: absolute;
+  left: 3%;
+  bottom: 0;
+  font-size: 20rem;
+  @media screen and (max-width: $break-small) {
+    font-size: 8rem;
+    left: 1%;
+  }
+  line-height: 1;
+  color: black;
+  opacity: 0.05;
+}
+#best-practices,
+#how-work {
   margin-bottom: 3rem;
 }
 

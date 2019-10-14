@@ -106,6 +106,20 @@ module.exports = {
         useShortDoctype: true
       }
     }),
+    new HtmlWebpackPlugin({
+      template: "./laravel/index.html",
+      filename: "./laravel/index.html",
+      // Inject the js bundle at the end of the body of the given template
+      inject: "body",
+      minify: {
+        collapseWhitespace: true,
+        removeComments: true,
+        removeRedundantAttributes: true,
+        removeScriptTypeAttributes: true,
+        removeStyleLinkTypeAttributes: true,
+        useShortDoctype: true
+      }
+    }),
     new CleanWebpackPlugin(buildPath),
     new FaviconsWebpackPlugin({
       // Your source logo
