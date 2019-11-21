@@ -2,3 +2,8 @@
   for = "/*"
   [headers.values]
     X-You-Are = "A nerd... :)"
+
+[[redirects]]
+  from = "https://morebetterfaster.netlify.com/*"
+  to = "https://morebetterfaster.io/:splat"
+  status = 301
