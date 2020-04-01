@@ -7,3 +7,8 @@
   from = "https://morebetterfaster.netlify.com/*"
   to = "https://morebetterfaster.io/:splat"
   status = 301
+
+[[redirects]]
+  from = "https://morebetterfaster.netlify.app/*"
+  to = "https://morebetterfaster.io/:splat"
+  status = 301
