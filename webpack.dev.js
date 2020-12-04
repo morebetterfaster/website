@@ -85,6 +85,11 @@ module.exports = {
       template: "./laravel/index.html",
       filename: "./laravel/index.html",
       inject: true
+    }),
+    new HtmlWebpackPlugin({
+      template: "./coaching/index.html",
+      filename: "./coaching/index.html",
+      inject: true
     })
   ]
 };
