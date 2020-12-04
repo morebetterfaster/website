@@ -144,6 +144,9 @@ p {
   }
   p {
     text-align: justify;
+    @media screen and (max-width: $break-small) {
+      text-align: left;
+    }
   }
   a {
     text-decoration: none;
