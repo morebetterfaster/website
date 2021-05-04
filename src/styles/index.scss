@@ -182,11 +182,13 @@ p {
 #process,
 #involve,
 #best-practices,
-#how-work {
+#how-work,
+#what-to-create, #requirements-parts {
   position: relative;
 }
 #process:after,
-#involve:after {
+#involve:after,
+#what-to-create:after {
   content: "⁜";
   position: absolute;
   right: 3%;
@@ -213,7 +215,7 @@ p {
   color: black;
   opacity: 0.05;
 }
-#how-work:after {
+#how-work:after, #requirements-parts:after {
   content: "🏆";
   position: absolute;
   left: 3%;
@@ -228,11 +230,11 @@ p {
   opacity: 0.05;
 }
 #best-practices,
-#how-work {
+#how-work, #requirements-parts {
   margin-bottom: 3rem;
 }
 
-#get-started {
+#get-started, #tldr-examples {
   background-color: #f7f9fc;
   padding-top: 2rem;
   padding-bottom: 3rem;
@@ -242,6 +244,24 @@ p {
   color: #0f3f9c;
   &:hover {
     color: lighten(#0f3f9c, 20);
+  }
+}
+
+#tldr-examples div div {
+  h4 {
+    margin-bottom: 2rem;
+  }
+  a {
+    text-decoration: none;
+    span {
+      text-decoration: underline;
+    }
+  }
+  img {
+    height: 4rem;
+    margin-right: 1.5rem;
+    border: 1px solid #dedede;
+    vertical-align: middle;
   }
 }
 

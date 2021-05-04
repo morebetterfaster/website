@@ -95,7 +95,11 @@ module.exports = {
       {
         from: "[Example] Acme Corp - Statement of Work.pdf",
         to: "[Example] Acme Corp - Statement of Work.pdf"
-      }
+      },
+      { from: "src/assets/requirements/requirements-doc-thumbnail.png", to: "requirements-doc-thumbnail.png" },
+      { from: "src/assets/requirements/wireframe-thumbnail.png", to: "wireframe-thumbnail.png" },
+      { from: "src/assets/requirements/Fizzle Stix - Mass Status for Slack - Requirements.pdf", to: "Fizzle Stix - Mass Status for Slack - Requirements.pdf" },
+      { from: "src/assets/requirements/Fizzle Stix - Mass Status for Slack - Wireframe.pdf", to: "Fizzle Stix - Mass Status for Slack - Wireframe.pdf" },
     ]),
     new HtmlWebpackPlugin({
       template: "./index.html",
@@ -127,6 +131,20 @@ module.exports = {
     new HtmlWebpackPlugin({
       template: "./coaching/index.html",
       filename: "./coaching/index.html",
+      // Inject the js bundle at the end of the body of the given template
+      inject: "body",
+      minify: {
+        collapseWhitespace: true,
+        removeComments: true,
+        removeRedundantAttributes: true,
+        removeScriptTypeAttributes: true,
+        removeStyleLinkTypeAttributes: true,
+        useShortDoctype: true
+      }
+    }),
+    new HtmlWebpackPlugin({
+      template: "./requirements/index.html",
+      filename: "./requirements/index.html",
       // Inject the js bundle at the end of the body of the given template
       inject: "body",
       minify: {

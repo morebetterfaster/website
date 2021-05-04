@@ -1,5 +1,6 @@
 const path = require("path");
 
+const CopyPlugin = require("copy-webpack-plugin");
 const HtmlWebpackPlugin = require("html-webpack-plugin");
 
 module.exports = {
@@ -77,6 +78,21 @@ module.exports = {
     ]
   },
   plugins: [
+    new CopyPlugin([
+      { from: "src/assets/aaron.png", to: "aaron.png" },
+      { from: "src/assets/email-logo.png", to: "email-logo.png" },
+      { from: "src/assets/logo.png", to: "logo.png" },
+      { from: "src/assets/requirements/requirements-doc-thumbnail.png", to: "requirements-doc-thumbnail.png" },
+      { from: "src/assets/requirements/wireframe-thumbnail.png", to: "wireframe-thumbnail.png" },
+      { from: "src/assets/requirements/Fizzle Stix - Mass Status for Slack - Requirements.pdf", to: "Fizzle Stix - Mass Status for Slack - Requirements.pdf" },
+      { from: "src/assets/requirements/Fizzle Stix - Mass Status for Slack - Wireframe.pdf", to: "Fizzle Stix - Mass Status for Slack - Wireframe.pdf" },
+      { from: "robots.txt", to: "robots.txt" },
+      { from: "humans.txt", to: "humans.txt" },
+      {
+        from: "[Example] Acme Corp - Statement of Work.pdf",
+        to: "[Example] Acme Corp - Statement of Work.pdf"
+      }
+    ]),
     new HtmlWebpackPlugin({
       template: "./index.html",
       inject: true
@@ -89,6 +105,11 @@ module.exports = {
     new HtmlWebpackPlugin({
       template: "./coaching/index.html",
       filename: "./coaching/index.html",
+      inject: true
+    }),
+    new HtmlWebpackPlugin({
+      template: "./requirements/index.html",
+      filename: "./requirements/index.html",
       inject: true
     })
   ]
