@@ -108,8 +108,13 @@ module.exports = {
       inject: true
     }),
     new HtmlWebpackPlugin({
-      template: "./requirements/index.html",
-      filename: "./requirements/index.html",
+      template: "./requirements-documentation/index.html",
+      filename: "./requirements-documentation/index.html",
+      inject: true
+    }),
+    new HtmlWebpackPlugin({
+      template: "./requirements-gathering/index.html",
+      filename: "./requirements-gathering/index.html",
       inject: true
     })
   ]
