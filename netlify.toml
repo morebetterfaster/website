@@ -12,3 +12,8 @@
   from = "https://morebetterfaster.netlify.app/*"
   to = "https://morebetterfaster.io/:splat"
   status = 301
+
+[[redirects]]
+  from = "/requirements"
+  to = "/requirements-documentation"
+  status = 301
