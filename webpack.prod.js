@@ -143,8 +143,22 @@ module.exports = {
       }
     }),
     new HtmlWebpackPlugin({
-      template: "./requirements/index.html",
-      filename: "./requirements/index.html",
+      template: "./requirements-documentation/index.html",
+      filename: "./requirements-documentation/index.html",
+      // Inject the js bundle at the end of the body of the given template
+      inject: "body",
+      minify: {
+        collapseWhitespace: true,
+        removeComments: true,
+        removeRedundantAttributes: true,
+        removeScriptTypeAttributes: true,
+        removeStyleLinkTypeAttributes: true,
+        useShortDoctype: true
+      }
+    }),
+    new HtmlWebpackPlugin({
+      template: "./requirements-gathering/index.html",
+      filename: "./requirements-gathering/index.html",
       // Inject the js bundle at the end of the body of the given template
       inject: "body",
       minify: {
