@@ -1,0 +1,10 @@
+@import "../node_modules/bootstrap/scss/functions";
+@import "../node_modules/bootstrap/scss/variables";
+
+$body-color: #eeeeee;
+
+@import "bootstrap";
+
+html {
+    background-color: black;
+}

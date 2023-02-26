@@ -1,11 +1,32 @@
 <!DOCTYPE html>
-<html>
-    {{- partial "head.html" . -}}
-    <body>
-        {{- partial "header.html" . -}}
-        <div id="content">
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <title>{{ .Title }}</title>
+
+    {{ $sass := resources.Get "main.scss" }}
+    {{ $style := $sass | resources.ToCSS | resources.Minify | resources.Fingerprint }}
+    <link rel="stylesheet" href="{{ $style.Permalink }}" integrity="{{ $style.Data.Integrity }}">
+    {{ $js := resources.Get "main.js" | js.Build "main.js" }}
+    {{ $secureJS := $js | resources.Fingerprint }}
+    <script src="{{ $secureJS.Permalink }}" integrity="{{ $secureJS.Data.Integrity }}" defer></script>
+    {{ if hugo.IsProduction }}
+    <script src="https://stupendous-satisfactory.morebetterfaster.io/script.js" data-site="QXSILJLM" defer></script>
+    {{ end }}
+</head>
+
+<body>
+    <header>
+        <h1>Header</h1>
+    </header>
+    <main class="container">
         {{- block "main" . }}{{- end }}
-        </div>
-        {{- partial "footer.html" . -}}
-    </body>
+    </main>
+    <footer>
+        Footer
+    </footer>
+</body>
+
 </html>
