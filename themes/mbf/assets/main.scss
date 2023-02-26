@@ -1,10 +1,39 @@
 @import "../node_modules/bootstrap/scss/functions";
 @import "../node_modules/bootstrap/scss/variables";
 
-$body-color: #eeeeee;
+$font-size-base: 18px;
+$font-weight-base: 300;
+$body-color: #B0CEFB;
+$body-bg: #000000;
+
+$font-family-base: 'Roboto', sans-serif;
+
+
+$nav-link-color: #ffffff;
 
 @import "bootstrap";
 
+* {
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
 html {
-    background-color: black;
+    background-color: $body-bg;
+}
+
+footer {
+    .logo-container {
+        padding: 12rem 0;
+    }
+
+    .logo {
+        height: 3rem;
+        filter: invert(100%);
+        opacity: 0.77;
+    }
+
+    .nav-item {
+        font-size: 14px;
+    }
 }

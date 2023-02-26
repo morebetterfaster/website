@@ -5,7 +5,9 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
     <title>{{ .Title }}</title>
-
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300&display=swap" rel="stylesheet">
     {{ $sass := resources.Get "main.scss" }}
     {{ $style := $sass | resources.ToCSS | resources.Minify | resources.Fingerprint }}
     <link rel="stylesheet" href="{{ $style.Permalink }}" integrity="{{ $style.Data.Integrity }}">
@@ -24,8 +26,38 @@
     <main class="container">
         {{- block "main" . }}{{- end }}
     </main>
-    <footer>
-        Footer
+    <footer style="border-top: 1px solid red;">
+        <section class="text-center container logo-container">
+            <div class="mb-2">
+                {{ $image := resources.Get "logo.svg" }}
+                <img src="{{ $image.RelPermalink }}" alt="logo" class="logo">
+            </div>
+            <div>
+                More Better Faster, LLC
+            </div>
+            <div>
+                Milwaukee, WI
+            </div>
+        </section>
+        <section class="container">
+            <ul class="nav justify-content-center">
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Services</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Projects</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">About</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Contact</a>
+                </li>
+            </ul>
+        </section>
     </footer>
 </body>
 
