@@ -1,6 +1,8 @@
 @import "../node_modules/bootstrap/scss/functions";
 @import "../node_modules/bootstrap/scss/variables";
 
+$primary: #80197D;
+
 $font-size-base: 18px;
 $font-weight-base: 300;
 $body-color: #B0CEFB;
@@ -8,10 +10,22 @@ $body-bg: #000000;
 
 $font-family-base: 'Roboto', sans-serif;
 
-
 $nav-link-color: #ffffff;
 
+$navbar-brand-font-size: 27px;
+$navbar-dark-color: #ffffff;
+$navbar-nav-link-padding-x: 3rem;
+
 @import "bootstrap";
+
+.btn-primary {
+    background-color: $primary;
+    border: none;
+
+    &:hover {
+        background-color: darken($primary, 10%);
+    }
+}
 
 * {
     -webkit-font-smoothing: antialiased;
@@ -20,6 +34,31 @@ $nav-link-color: #ffffff;
 
 html {
     background-color: $body-bg;
+}
+
+header {
+    background-color: #001122;
+
+    .logo {
+        height: 3.5rem;
+        filter: invert(100%);
+        opacity: 0.77;
+    }
+
+    .nav-item {
+        font-size: 27px;
+        font-weight: 100;
+    }
+
+    .contact {
+        border: 1px solid $primary;
+        border-radius: 1rem;
+        margin-left: 1rem;
+
+        &:hover {
+            background-color: $primary;
+        }
+    }
 }
 
 footer {
@@ -35,5 +74,33 @@ footer {
 
     .nav-item {
         font-size: 14px;
+    }
+}
+
+#home-hero {
+    padding: 10rem 0;
+    background-image: url('/images/hero-back.webp');
+    background-size: cover;
+    background-position: center top;
+    min-height: calc(100vh - 10rem);
+
+    h1 {
+        color: #ffffff;
+        opacity: 0.85;
+        font-weight: 500;
+        font-size: 100px;
+        max-width: 930px;
+        line-height: 1.6;
+        margin-bottom: 8rem;
+
+        span {
+            font-weight: 900;
+            border-bottom: 4px solid $primary;
+        }
+    }
+
+    .btn-primary {
+        font-size: 27px;
+        font-weight: 300;
     }
 }
