@@ -6,6 +6,7 @@ theme = 'mbf'
 [menu]
 [[menu.main]]
   name = 'Home'
+  identifier = 'home'
   url = '/'
   weight = 10
 [[menu.main]]
@@ -16,6 +17,11 @@ theme = 'mbf'
 [[menu.main]]
   name = 'Code Review'
   pageref = 'code-review'
+  weight = 21
+  parent = 'services'
+[[menu.main]]
+  name = 'Development'
+  pageref = 'development'
   weight = 21
   parent = 'services'
 [[menu.main]]
