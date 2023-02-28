@@ -2,3 +2,25 @@ baseURL = 'https://morebetterfaster.io'
 languageCode = 'en-us'
 title = 'My New Hugo Site'
 theme = 'mbf'
+
+[menu]
+[[menu.main]]
+  name = 'Home'
+  url = '/'
+  weight = 10
+[[menu.main]]
+  name = 'Services'
+  pageref = 'services'
+  weight = 20
+[[menu.main]]
+  name = 'Projects'
+  pageref = 'projects'
+  weight = 30
+[[menu.main]]
+  name = 'About'
+  pageref = 'about'
+  weight = 40
+[[menu.main]]
+  name = 'Contact'
+  pageref = 'contact'
+  weight = 50

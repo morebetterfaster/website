@@ -2,12 +2,11 @@
 @import "../node_modules/bootstrap/scss/variables";
 
 $primary: #80197D;
-
-$font-size-base: 18px;
-$font-weight-base: 300;
 $body-color: #B0CEFB;
 $body-bg: #000000;
 
+$font-size-base: 27px;
+$font-weight-base: 300;
 $font-family-base: 'Roboto', sans-serif;
 
 $nav-link-color: #ffffff;
@@ -15,6 +14,8 @@ $nav-link-color: #ffffff;
 $navbar-brand-font-size: 27px;
 $navbar-dark-color: #ffffff;
 $navbar-nav-link-padding-x: 3rem;
+
+$header-bg: #001122;
 
 @import "bootstrap";
 
@@ -37,7 +38,7 @@ html {
 }
 
 header {
-    background-color: #001122;
+    background-color: $header-bg;
 
     .logo {
         height: 3.5rem;
@@ -45,9 +46,13 @@ header {
         opacity: 0.77;
     }
 
-    .nav-item {
-        font-size: 27px;
+    .nav-link {
         font-weight: 100;
+
+        &.active {
+            font-weight: 500;
+            opacity: 0.8;
+        }
     }
 
     .contact {
@@ -61,7 +66,43 @@ header {
     }
 }
 
+main {
+    padding: 4rem 0;
+    background: linear-gradient(180deg, rgba(13, 15, 18, 1) 0%, rgba(0, 0, 0, 1) 100%);
+}
+
+article {
+    max-width: 48rem;
+
+    p {
+        line-height: 1.35;
+    }
+
+    h2 {
+        font-size: 33px;
+        font-weight: 300;
+        margin-bottom: 1rem;
+
+        &:not(:first-of-type) {
+            margin-top: 3rem;
+        }
+
+        a {
+            text-decoration: none;
+            color: #ffffff;
+            border-bottom: 3px solid $primary;
+
+            &:hover {
+                color: #ccc;
+                border-color: darken($primary, 10%);
+            }
+        }
+    }
+}
+
 footer {
+    font-size: 18px;
+
     .logo-container {
         padding: 12rem 0;
     }
@@ -102,5 +143,17 @@ footer {
     .btn-primary {
         font-size: 27px;
         font-weight: 300;
+    }
+}
+
+#page-header {
+    padding: 5rem 0;
+    background: linear-gradient(180deg, rgba(0, 17, 34, 1) 0%, rgba(0, 9, 18, 1) 100%);
+
+    h1 {
+        font-size: 100px;
+        color: #ffffff;
+        opacity: 0.85;
+        font-weight: 500;
     }
 }
