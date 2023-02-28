@@ -28,6 +28,10 @@ $header-bg: #001122;
     }
 }
 
+.bg-primary {
+    background-color: $primary !important;
+}
+
 .btn-large {
     font-size: 27px;
     font-weight: 300;
@@ -172,4 +176,15 @@ footer {
     max-height: 180px;
     border: 1px solid #222;
     margin-top: 0.5rem;
+}
+
+.pdf-icon {
+    height: 100px;
+    width: 100px;
+    filter: invert(100%);
+    opacity: 0.77;
+
+    &:hover {
+        opacity: 1;
+    }
 }

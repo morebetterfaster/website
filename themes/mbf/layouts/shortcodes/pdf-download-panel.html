@@ -1,0 +1,16 @@
+{{ $link := .Get 0 }}
+{{ $image := resources.Get "images/pdf-icon.svg" }}
+
+<div class="d-flex">
+    <div class="flex-grow-1 me-3">
+        {{ .Inner }}
+        <div>
+            <a href="{{ $link }}">Download PDF</a>
+        </div>
+    </div>
+    <div class="flex-shrink-0">
+        <a href="{{ $link }}">
+            <img src="{{ $image.RelPermalink }}" alt="PDF" class="pdf-icon">
+        </a>
+    </div>
+</div>
