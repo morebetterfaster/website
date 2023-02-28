@@ -1,0 +1,11 @@
+{{ $incoming := .Get 0 }}
+{{ $image := resources.Get $incoming }}
+
+<div class="d-flex">
+    <div class="flex-shrink-0">
+        <img src="{{ $image.RelPermalink }}" alt="supporting image" class="img-fluid project-thumbnail">
+    </div>
+    <div class="flex-grow-1 ms-3">
+        {{ .Inner }}
+    </div>
+</div>
