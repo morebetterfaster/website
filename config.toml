@@ -16,12 +16,12 @@ theme = 'mbf'
   weight = 20
 [[menu.main]]
   name = 'Code Review'
-  pageref = 'code-review'
+  pageref = 'services-code-review'
   weight = 21
   parent = 'services'
 [[menu.main]]
   name = 'Development'
-  pageref = 'development'
+  pageref = 'services-development'
   weight = 21
   parent = 'services'
 [[menu.main]]

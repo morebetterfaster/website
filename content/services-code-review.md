@@ -2,6 +2,7 @@
 title: "Code Review"
 date: 2023-02-28T14:53:22-06:00
 draft: false
+url: "services/code-review"
 ---
 Do you find yourself wondering if you’re constructing your project the right way? Do you have some architecture questions that you want to run by someone? Or maybe you just need a second opinion. A comprehensive code review may be the answer.
 
