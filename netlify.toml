@@ -1,0 +1,4 @@
+[[headers]]
+  for = "/*"
+  [headers.values]
+    X-Security-Message= "Yup, we can help with that, too! :)"
