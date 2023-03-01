@@ -4,7 +4,7 @@
     X-Security-Message= "Yup, we can help with that, too! :)"
 
 [build]
-  command = "hugo --minify"
+  command = "npm --prefix=./themes/mbf install && hugo --minify"
   publish = "public"
 
 [build.environment]
