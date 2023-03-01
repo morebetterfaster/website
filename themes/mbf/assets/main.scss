@@ -17,6 +17,9 @@ $navbar-nav-link-padding-x: 3rem;
 
 $header-bg: #001122;
 
+$header-h1-font-size-lg: 100px;
+$header-h1-font-size-normal: 60px;
+
 @import "bootstrap";
 
 .btn-primary {
@@ -53,13 +56,28 @@ header {
     background-color: $header-bg;
 
     .logo {
-        height: 3.5rem;
+        height: 2rem;
+        padding-left: 1rem;
+
+        @include media-breakpoint-up(md) {
+            height: 3.5rem;
+            padding-left: 0;
+        }
+
         filter: invert(100%);
         opacity: 0.77;
     }
 
     .nav-link {
-        font-weight: 100;
+        font-size: 16px;
+        font-weight: 300;
+        --bs-navbar-nav-link-padding-x: 1.5rem;
+
+        @include media-breakpoint-up(lg) {
+            --bs-navbar-nav-link-padding-x: 3rem;
+            font-size: $font-size-base;
+            font-weight: 100;
+        }
 
         &.active {
             font-weight: 500;
@@ -68,12 +86,22 @@ header {
     }
 
     .contact {
-        border: 1px solid $primary;
-        border-radius: 1rem;
-        margin-left: 1rem;
+        @include media-breakpoint-up(md) {
+            margin-left: 1rem;
+            border: 1px solid $primary;
+            border-radius: 1rem;
 
-        &:hover {
-            background-color: $primary;
+            &:hover {
+                background-color: $primary;
+            }
+        }
+    }
+
+    .navbar-toggler {
+        border: none;
+
+        &:focus {
+            box-shadow: none;
         }
     }
 }
@@ -85,6 +113,7 @@ main {
 
 article {
     max-width: 48rem;
+    padding: 0 1.5rem;
 
     p {
         line-height: 1.35;
@@ -125,7 +154,11 @@ footer {
     font-size: 18px;
 
     .logo-container {
-        padding: 12rem 0;
+        padding: 0 0 5rem 0;
+
+        @include media-breakpoint-up(md) {
+            padding: 12rem 0;
+        }
     }
 
     .logo {
@@ -148,17 +181,34 @@ footer {
 
     background: linear-gradient(180deg, rgba(0, 17, 34, 1) 0%, rgba(22, 40, 60, 1) 52%, rgba(0, 17, 34, 1) 100%);
 
-    padding: 10rem 0;
     min-height: calc(100vh - 10rem);
 
+    padding: 3rem 0;
+
+    @include media-breakpoint-up(md) {
+        padding: 10rem 0;
+    }
+
+
     h1 {
+        font-size: $header-h1-font-size-normal;
+        font-weight: 500;
+        line-height: 1.4;
+
+        @include media-breakpoint-up(lg) {
+            line-height: 1.6;
+            font-size: $header-h1-font-size-lg;
+        }
+
+        margin-bottom: 5rem;
+
+        @include media-breakpoint-up(md) {
+            margin-bottom: 8rem;
+        }
+
         color: #ffffff;
         opacity: 0.85;
-        font-weight: 500;
-        font-size: 100px;
         max-width: 930px;
-        line-height: 1.6;
-        margin-bottom: 8rem;
 
         span {
             font-weight: 900;
@@ -172,7 +222,12 @@ footer {
     background: linear-gradient(180deg, rgba(0, 17, 34, 1) 0%, rgba(0, 9, 18, 1) 100%);
 
     h1 {
-        font-size: 100px;
+        font-size: $header-h1-font-size-normal;
+
+        @include media-breakpoint-up(lg) {
+            font-size: $header-h1-font-size-lg;
+        }
+
         color: #ffffff;
         opacity: 0.85;
         font-weight: 500;
