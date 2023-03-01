@@ -2,6 +2,7 @@ baseURL = 'https://morebetterfaster.io'
 languageCode = 'en-us'
 title = 'My New Hugo Site'
 theme = 'mbf'
+disableKinds = ["taxonomy", "term", "RSS"]
 
 [menu]
 [[menu.main]]

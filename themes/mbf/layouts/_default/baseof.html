@@ -18,7 +18,7 @@
     {{ $style := $sass | resources.ToCSS | resources.Minify | resources.Fingerprint }}
     <link rel="stylesheet" href="{{ $style.Permalink }}" integrity="{{ $style.Data.Integrity }}">
     {{ $js := resources.Get "main.js" | js.Build "main.js" }}
-    {{ $secureJS := $js | resources.Fingerprint }}
+    {{ $secureJS := $js | resources.Minify | resources.Fingerprint }}
     <script src="{{ $secureJS.Permalink }}" integrity="{{ $secureJS.Data.Integrity }}" defer></script>
     {{ if hugo.IsProduction }}
     <script src="https://stupendous-satisfactory.morebetterfaster.io/script.js" data-site="QXSILJLM" defer></script>
