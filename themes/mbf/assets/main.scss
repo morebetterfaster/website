@@ -140,10 +140,15 @@ footer {
 }
 
 #home-hero {
+    @media (min-resolution: 192dpi) {
+        background-image: url('/images/hero-back.webp');
+        background-size: cover;
+        background-position: center top;
+    }
+
+    background: linear-gradient(180deg, rgba(0, 17, 34, 1) 0%, rgba(22, 40, 60, 1) 52%, rgba(0, 17, 34, 1) 100%);
+
     padding: 10rem 0;
-    background-image: url('/images/hero-back.webp');
-    background-size: cover;
-    background-position: center top;
     min-height: calc(100vh - 10rem);
 
     h1 {
