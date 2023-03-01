@@ -5,6 +5,11 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
     <title>{{ .Title }} | More Better Faster</title>
+    <meta property="og:title" content="{{ .Title }}" />
+    <meta property="og:site_name" content="More Better Faster" />
+    <meta property="og:image" content="https://morebetterfaster.io/logo.png" />
+    <meta property="og:description" content="{{ .Description }}" />
+    <meta name="description" content="{{ .Description }}" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;500;900&display=swap" rel="stylesheet">
@@ -17,7 +22,7 @@
     {{ if hugo.IsProduction }}
     <script src="https://stupendous-satisfactory.morebetterfaster.io/script.js" data-site="QXSILJLM" defer></script>
     {{ end }}
-    {{ $logo := resources.Get "logo.svg" }}
+    {{ $logo := resources.Get "images/logo-for-site.svg" }}
 </head>
 
 <body>
@@ -55,7 +60,6 @@
     <footer>
         <section class="text-center container logo-container">
             <div class="mb-2">
-                {{ $logo := resources.Get "logo.svg" }}
                 <img src="{{ $logo.RelPermalink }}" alt="logo" class="logo">
             </div>
             <div>
