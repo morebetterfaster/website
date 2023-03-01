@@ -29,7 +29,7 @@ Your project is likely made up of more than just Laravel code and configuration.
 
 ## Can I See an Example?
 
-{{< pdf-download-panel "pdfs/code-review.pdf" >}}
+{{< pdf-download-panel "/pdfs/code-review.pdf" >}}
 Sure! Because client code security is paramount, this example code review was done against an open source project free and available to anyone.
 {{< /pdf-download-panel >}}
 
