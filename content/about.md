@@ -1,5 +1,6 @@
 ---
 title: "About"
+description: "Learn more about the people behind and the history of More Better Faster."
 date: 2023-02-28T13:52:39-06:00
 draft: false
 ---

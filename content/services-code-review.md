@@ -1,5 +1,6 @@
 ---
 title: "Code Review"
+description: "Make sure your code is secure, performant and easy to keep current."
 date: 2023-02-28T14:53:22-06:00
 draft: false
 url: "services/code-review"

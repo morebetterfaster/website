@@ -1,5 +1,6 @@
 ---
 title: "Services"
+description: "Code review and development from a company with decades of experience."
 date: 2023-02-28T12:20:02-06:00
 draft: false
 ---

@@ -1,5 +1,6 @@
 ---
 title: "Contact"
+description: "Email, call or schedule a meeting."
 date: 2023-02-28T13:23:34-06:00
 draft: false
 ---

@@ -1,5 +1,6 @@
 ---
 title: "Development"
+description: "Wireframes, documentation, Laravel, PHP, Javascript - that's just the beginning."
 date: 2023-02-28T14:53:22-06:00
 draft: false
 url: "services/development"

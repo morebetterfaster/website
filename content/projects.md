@@ -1,5 +1,6 @@
 ---
 title: "Projects"
+description: "Find out which projects MBF supports and endorses."
 date: 2023-02-28T13:52:39-06:00
 draft: false
 ---
