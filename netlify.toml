@@ -2,3 +2,10 @@
   for = "/*"
   [headers.values]
     X-Security-Message= "Yup, we can help with that, too! :)"
+
+[build]
+  command = "hugo --minify"
+  publish = "public"
+
+[build.environment]
+  HUGO_VERSION = "0.110.0"
