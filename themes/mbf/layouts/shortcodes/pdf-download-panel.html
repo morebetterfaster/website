@@ -5,11 +5,11 @@
     <div class="flex-grow-1 me-3">
         {{ .Inner }}
         <div>
-            <a href="{{ $link }}">Download PDF</a>
+            <a href="{{ $link }}" download>Download PDF</a>
         </div>
     </div>
     <div class="flex-shrink-0">
-        <a href="{{ $link }}">
+        <a href="{{ $link }}" download>
             <img src="{{ $image.RelPermalink }}" alt="PDF" class="pdf-icon">
         </a>
     </div>
