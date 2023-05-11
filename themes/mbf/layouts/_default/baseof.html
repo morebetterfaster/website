@@ -21,7 +21,7 @@
     {{ $secureJS := $js | resources.Minify | resources.Fingerprint }}
     <script src="{{ $secureJS.Permalink }}" integrity="{{ $secureJS.Data.Integrity }}" defer></script>
     {{ if hugo.IsProduction }}
-    <script src="https://stupendous-satisfactory.morebetterfaster.io/script.js" data-site="QXSILJLM" defer></script>
+    <script src="https://cdn.usefathom.com/script.js" data-site="QXSILJLM" defer></script>
     {{ end }}
     {{ $logo := resources.Get "images/logo-for-site.svg" }}
 </head>
