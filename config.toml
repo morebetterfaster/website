@@ -26,10 +26,6 @@ disableKinds = ["taxonomy", "term", "RSS"]
   weight = 21
   parent = 'services'
 [[menu.main]]
-  name = 'Projects'
-  pageref = 'projects'
-  weight = 30
-[[menu.main]]
   name = 'About'
   pageref = 'about'
   weight = 40
