@@ -1,3 +1,13 @@
+{{ $classes := slice "badge" "bg-primary" }}
+{{ $status := false }}
+{{ with (.Get 1) }}{{ $status = . }}{{ end }}
+{{ if eq $status "sold" }}{{ $classes = append "text-decoration-line-through" $classes }}{{ end }}
+
 <div class="mb-3">
-    <span class="badge bg-primary">{{ .Get 0 }}</span>
+    <span class="{{ range $classes }}{{ . }} {{ end }}">{{ .Get 0 }}</span>
+    {{ if eq $status "sold" }}
+    <span class="badge bg-danger fw-light fst-italic">Not Available</span>
+    {{ else if eq $status "pending" }}
+    <span class="badge bg-dark fw-light fst-italic">Availability pending contract</span>
+    {{ end }}
 </div>
