@@ -7,8 +7,8 @@ draft: false
 
 More Better Faster supports and sponsors these projects.
 
-## [ScheduledSend](https://scheduledsend.io)
+## [Typesetter.io](https://typesetter.io)
 
-{{< media-panel "images/scheduledsend.io-thumbnail.jpg" >}}
-<a href="https://scheduledsend.io" target="_blank">ScheduledSend.io</a> provides simple scheduling for Mastodon updates.  The project is currently under development.  Sign up for the waiting list to get a note when it launches.
+{{< media-panel "images/typesetter.io-thumbnail.jpg" >}}
+<a href="https://typesetter.io" target="_blank">Typesetter.io</a> provides a simple, straightforward PHP-based toolset to convert Markdown to PDF for ebooks. It is open source and can be used via command line or in your application directly.
 {{< /media-panel >}}
