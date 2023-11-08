@@ -70,7 +70,7 @@ Two consultants split their work time between your project.  **Two** objectives 
 
 ### Dedicated Consultant
 
-{{< pricing-label "$18000/mo" "pending" >}}
+{{< pricing-label "$18000/mo" "sold" >}}
 
 While we operate strictly as consultants, this arrangement feels just like having another team member on your staff.  You can expect most of the week to be dedicated to your project's work. You may find a stronger integration with your team with
 this option as the consultant may choose to attend daily stand-ups and other planning meetings.  This consultant only works as a back up or disaster-recovery resource for other consultants besides their main focus on your project.
