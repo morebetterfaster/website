@@ -58,19 +58,19 @@ All new clients of development services enjoy a full, 100% money back guarantee 
 
 ### Single Consultant
 
-{{< pricing-label "$5000/mo" >}}
+{{< pricing-label "$9500/mo" >}}
 
 One consultant splits their work time between your project and only up to 3 other client projects. One objective or task is focused on at a time. This linear process is cost effective, easy to forecast and a nice way to keep your project going in the right direction.
 
 ### Two Consultants
 
-{{< pricing-label "$9500/mo" >}}
+{{< pricing-label "$18000/mo" >}}
 
 Two consultants split their work time between your project.  **Two** objectives or tasks are done at the same time. This option allows work to continue even if you're not available immediately to address any questions or changes. 
 
 ### Dedicated Consultant
 
-{{< pricing-label "$18000/mo" "sold" >}}
+{{< pricing-label "$35000/mo" "sold" >}}
 
 While we operate strictly as consultants, this arrangement feels just like having another team member on your staff.  You can expect most of the week to be dedicated to your project's work. You may find a stronger integration with your team with
 this option as the consultant may choose to attend daily stand-ups and other planning meetings.  This consultant only works as a back up or disaster-recovery resource for other consultants besides their main focus on your project.
