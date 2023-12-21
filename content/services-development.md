@@ -58,13 +58,13 @@ All new clients of development services enjoy a full, 100% money back guarantee 
 
 ### Single Consultant
 
-{{< pricing-label "$9500/mo" >}}
+{{< pricing-label "$7500/mo" >}}
 
 One consultant splits their work time between your project and only up to 3 other client projects. One objective or task is focused on at a time. This linear process is cost effective, easy to forecast and a nice way to keep your project going in the right direction.
 
 ### Two Consultants
 
-{{< pricing-label "$18000/mo" >}}
+{{< pricing-label "$13500/mo" >}}
 
 Two consultants split their work time between your project.  **Two** objectives or tasks are done at the same time. This option allows work to continue even if you're not available immediately to address any questions or changes. 
 
